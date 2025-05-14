@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio! I'm a web developer passionate about creating innovative solutions.</p>
+    </section>
+    
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <h2>Project 1</h2>
+                <p>Implemented foundational HTML, CSS, and JavaScript concepts.</p>
+            </div>
+            <div class="project">
+                <h2>Project 2</h2>
+                <p>Created a form with validation and structured it with Flexbox and CSS Grid.</p>
+            </div>
+            <div class="project">
+                <h2>Project 3</h2>
+                <p>Built an interactive quiz, an image carousel, and fetched API data.</p>
+            </div>    
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="products">
+        <h1>Products</h1>
+        <div class="filter-options">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+            </select>
+            <select id="price-filter">
+                <option value="all">All Prices</option>
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+            <select id="sort-options">
+                <option value="rating">Rating</option>
+                <option value="price">Price</option>
+            </select>
+        </div>
+        <div class="product-list"></div>
+    </section>
+
+    <section id="todo-list">
+        <h1>To-Do List</h1>
+        <input type="text" id="todo-input" placeholder="Add new task">
+        <button id="add-todo-btn">Add</button>
+        <ul id="todo-list-items"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
